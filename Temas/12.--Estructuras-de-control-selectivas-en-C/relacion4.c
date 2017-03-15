@@ -2,10 +2,10 @@
  * con cláusulas "else" anidadas  */
 #include <stdio.h>
 
-int x, y;
-
 void main( void )
 {
+	int x, y;
+
 	/* Ingresando los dos valores a ser comparados */
 	printf("\n Ingrese un valor entero para x: ");
 	scanf("%d", &x);
