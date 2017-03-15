@@ -1,10 +1,10 @@
 /* Programa que muestra el uso de la sentencia "switch" */
 #include <stdio.h>
 
-int entrada;
-
 void main( void )
 {
+	int entrada;
+
 	printf("\n Ingrese un número del 1 al 3: ");
 	scanf("%d", &entrada);
 	
