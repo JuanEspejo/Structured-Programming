@@ -1,4 +1,4 @@
-# Programacion-en-C
+# Programacion-estructurada
 
 ## Examenes de CC101
 
