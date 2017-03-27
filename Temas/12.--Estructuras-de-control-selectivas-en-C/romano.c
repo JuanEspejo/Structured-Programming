@@ -1,11 +1,13 @@
 #include <stdio.h>
-int main()
+
+void main()
 {
 	int x,d,u;
 	printf("ingrese un numero\t");
 	scanf("%d",&x);
 	d=x/10;
 	u=x%10;
+
 	switch(d){
 		case 1:printf("X");break;
 		case 2:printf("XX");break;
@@ -29,5 +31,4 @@ int main()
 		case 9:printf("IX");break;
 	}
 	printf("\n");
-	return 0;
 }
