@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-void main( void )
+void main()
 {
 	int seleccion = 0;
 	
