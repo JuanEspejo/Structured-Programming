@@ -7,10 +7,10 @@ int main ()
 	printf ("Ingrese un dos enteros positivos:");
 	scanf ("%d %d", &M, &N);
 
-    d = M;	
+    	d = M;	
 	if (M > N)
-	    d = N;
-    // d = min(M,N)
+		d = N;
+    	// d = min(M,N)
 
 	for ( ; d >= 1 ; d = d - 1)
 	{
