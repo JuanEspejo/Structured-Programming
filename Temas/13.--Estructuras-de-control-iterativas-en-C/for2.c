@@ -1,11 +1,11 @@
 /* Programa que muestra el uso de sentencias "for" */
 #include <stdio.h>
 
-int i; // para almacenar el índice
-float ingresos[7]; // para almacenar los ingresos de la semana
-
 void main( void )
 {
+	int i; // para almacenar el índice
+	float ingresos[7]; // para almacenar los ingresos de la semana
+
 	/* leyendo los ingresos de la semana */
 	for (i = 0; i <= 6; i++)
 	{
