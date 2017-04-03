@@ -1,7 +1,7 @@
 /* Programa que muestra el uso de sentencias "for" */
 #include <stdio.h>
 
-void main( void )
+void main()
 {
 	int i; // para almacenar el índice
 	float ingresos[7]; // para almacenar los ingresos de la semana
