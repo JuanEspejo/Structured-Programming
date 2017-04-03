@@ -4,12 +4,12 @@
 
 #include <stdio.h>
 
-int 	i; // para almacenar el índice
-int 	numero[3]; // declarando arreglo numero
-int 	temp; // para almacenar valores temporalmente
-
 void main( void )
 {	
+	int 	i; // para almacenar el índice
+	int 	numero[3]; // declarando arreglo numero
+	int 	temp; // para almacenar valores temporalmente
+
 	i = 0;
 	while (i <= 2) // leyendo los tres enteros 
 	{
