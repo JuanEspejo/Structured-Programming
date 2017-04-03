@@ -1,7 +1,7 @@
 /* Programa que muestra el uso de sentencias "for" */
 #include <stdio.h>
 
-void main( void )
+void main()
 {
 	int cont;
 	/* mostrando los números enteros del 1 al el 20 */
