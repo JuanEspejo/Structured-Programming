@@ -9,9 +9,9 @@ int main ()
 	
 	if (M < N)
 	{
-	    R = M; // utilizamos R como variable auxiliar	
-        M = N;
-        N = R;
+		R = M; // utilizamos R como variable auxiliar	
+        	M = N;
+        	N = R;
 	}
         
 	for (R = M%N ; R != 0 ; R = M%N)
