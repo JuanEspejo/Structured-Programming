@@ -16,8 +16,8 @@ int main ()
         
 	for (R = M%N ; R != 0 ; R = M%N)
 	{
-        M = N;
-        N = R;
+        	M = N;
+        	N = R;
 	}
 
 	printf (" El mcd es %d\n", N);
