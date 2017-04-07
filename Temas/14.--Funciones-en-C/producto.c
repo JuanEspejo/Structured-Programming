@@ -3,7 +3,7 @@
  
 #include <stdio.h>
 
-int producto (int a, int b); // cabecera de la función producto
+int producto (int a, int b); // prototipo de la función producto
 
 void main (void)
 {
