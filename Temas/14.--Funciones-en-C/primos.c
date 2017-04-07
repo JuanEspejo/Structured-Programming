@@ -3,7 +3,8 @@
  
 #include <stdio.h>
 
-int esprimo (int N);
+// prototipo de la función esprimo
+int esprimo (int N); 
 
 void main (void)
 {
