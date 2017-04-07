@@ -14,6 +14,7 @@ void main (void)
 	printf(" Los primos menores o iguales a %d son: 2", n);
 	
 	for(i = 3; i <= n; i++)
+	    // pasamos a la función esprimo EL VALOR de i
 		if (esprimo(i) == 1) printf(", %d",i);
 	printf(".\n\n");
 }
@@ -21,12 +22,13 @@ void main (void)
 
 int esprimo (int N)
 {
-	int d = 2, cont = 0;
+	int d = 2, cont = 0; 
 	while (d < N && cont == 0)
 	{
-		if (N % d == 0) cont++;
+		if (N % d == 0) cont++; // contando
 		d++;
 	}
-	if (cont == 0) return 1;
-	else return 0;
+	// cont almacena la cantidad de divisores propios de N mayores que 1
+	if (cont == 0) return 1; // retornamos 1 si N es primo
+	else return 0; // retornamos 0 si N no es primo
 }
