@@ -3,7 +3,7 @@
  
 #include <stdio.h>
 
-int producto (int a, int b); // prototipo de la función producto
+int producto (int a, int b); // cabecera de la función producto
 
 void main (void)
 {
@@ -13,7 +13,9 @@ void main (void)
 	scanf("%d", &x);
 	printf(" Ingrese otro valor entero: ");
 	scanf("%d", &y);
-	printf(" El producto de dichos valores es %d\n\n", producto(x,y));
+	
+	// pasamos a la función producto LOS VALORES de x e y, respectivamente
+    printf(" El producto de dichos valores es %d\n\n", producto(x,y));
 }
 
 // definición de la función producto
