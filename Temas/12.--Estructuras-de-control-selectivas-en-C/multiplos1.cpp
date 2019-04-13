@@ -20,11 +20,11 @@ main ()
 	} 
 	if(n%5 == 0) 
 	{
-		cout << " dos"; 
+		cout << " cinco"; 
 	}
 	if(n%7 == 0)
 	{
-		cout << " tres";
+		cout << " siete";
 	} 
 	cout << endl;
 }
