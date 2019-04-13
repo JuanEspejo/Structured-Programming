@@ -20,6 +20,7 @@ main ()
 		cout << b;
 	} 
 	else 
+	{
 		cout << "son iguales.";
 	}	 
 	cout << endl;
