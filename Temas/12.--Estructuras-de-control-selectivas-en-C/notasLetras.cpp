@@ -12,12 +12,15 @@ main()
 	
 	switch (nota)
 	{
-		case 'A': 
-			cout << " Lograste el nivel esperado." << endl;
+		case 'A':
+		case 'a': 
+			cout << " Ha logrado el nivel esperado." << endl;
 			break;
+		case 'b':
 		case 'B': 
-			cout << " Has avanzado pero aún no llegado el nivel esperado." << endl;
+			cout << " Ha avanzado pero aún no ha llegado el nivel esperado." << endl;
 			break;
+		case 'c':
 		case 'C': 
 			cout << " Necesita reforzamiento." << endl;
 			break;
@@ -25,3 +28,8 @@ main()
 			cout << " Ingreso incorrecto." << endl; 
 	}
 }
+
+
+
+
+
