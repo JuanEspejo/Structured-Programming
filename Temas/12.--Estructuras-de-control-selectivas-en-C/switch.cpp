@@ -16,7 +16,7 @@ main()
 			cout << " Ingresaste el 1." << endl;
 			break;
 		case 2: 
-			cout << " Ingresaste el 3." << endl;
+			cout << " Ingresaste el 2." << endl;
 			break;
 		case 3: 
 			cout << " Ingresaste el 3." << endl;
