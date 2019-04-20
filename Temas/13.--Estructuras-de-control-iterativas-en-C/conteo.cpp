@@ -10,7 +10,8 @@ main ()
 	{
 		contador = contador + 1;
 		cout << contador << endl;
-	} while (contador <= 9);
+	} 
+	while (contador <= 9);
 }
 
 
