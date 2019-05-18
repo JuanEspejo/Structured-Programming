@@ -1,39 +1,19 @@
 #include<iostream>
-#include<cstdlib>
-#define LENGTH 10 
-
 using namespace std;
 
-void fill(int a[], int n);
-void max(int a[], int n);
+int main(){
+	int notas[4], max;
 
-main()
-{
-	srand(time(NULL));
-	int grade[LENGTH];
-	fill(grade, LENGTH);
-	max(grade, LENGTH);			
-}
-
-void fill(int a[], int n)
-{
-	for(int j = 0; j < n; j++)
-	{
-		a[j] = 1 + rand()%20;
-		cout << "a[" << j << "]: " << a[j] << endl;
+	for(int j = 0; j < 4; j++) {
+		cout << " ingrese la pc" << j + 1 << ": ";
+		cin >> notas[j];	
 	}
-}
 
-void max(int a[], int n)
-{
-	int max = a[0];
-	for(int j = 1; j < n; j++)
-		if(a[j] > max) max = a[j];
-	for(int j = 0; j < n; j++)
-		if(a[j] == max)
-		{
-			cout << " index: " << j << endl;
-			cout << " max: " << max << endl;
-			break;
-		}
+	max = notas[0];
+	for(int j = 1; j < 4; j++) {
+		if(notas[j] > max)	
+			max = notas[j];
+	}
+	
+	cout << " la nota maxima es " << max << endl;
 }
