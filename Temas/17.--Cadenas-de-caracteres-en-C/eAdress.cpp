@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cstring>
+#include <cmath>
+
 using namespace std;
 
 bool isLowercaseLetter(char letter);
@@ -10,14 +12,15 @@ bool isValidChar(char letter);
 
 int main() {
 
-    char eAddress[40] = "Jespejod@uni.edu";
-    char eAdressValidated[40];
+    char eAddress[40] = "Jespejod@uniFcCc.edu";
+    char eAddressValidated[40];
     int length = strlen(eAddress);
     int quantityAt = 0;
     int quantityDot = 0;
-    int n1 = 0, n2 = 0, n3 = 0;
-    int k = 0;
-    cout << "length: " << length << endl;
+    int quantityChar = 0;
+    int k = 0, l = 0;
+
+    cout << "length: " << length <<endl;
     for (int j = 0; j < length; ++j) {
         if (!isValidChar(eAddress[j])) {
             cout << " It must contain alphanumeric or @ or . only!" << endl;
@@ -30,6 +33,38 @@ int main() {
         cout << " It must contain one @ and one . only!" << endl;
         return 1;
     }
+
+    while (eAddress[k] != '@') {
+        if (isUppercaseLetter(eAddress[k]))
+            eAddressValidated[l++] = 32 + eAddress[k++];
+        else
+            eAddressValidated[l++] = eAddress[k++];
+        quantityChar++;
+    }
+    if (quantityChar < 3) {
+        cout << " The name must contain at least 3 alpha-numeric chars!";
+        cout << endl;
+        return 1;
+    }
+
+    eAddressValidated[l++] = '@';
+    quantityChar = 0;
+    while (eAddress[++k] != '.') {
+        if (isUppercaseLetter(eAddress[k]))
+            eAddressValidated[l++] = 32 + eAddress[k];
+        else
+            eAddressValidated[l++] = eAddress[k];
+        quantityChar++;
+    }
+    if (quantityChar < 6) {
+        cout << " The middle domain must contain at least 6 alpha-numeric chars!";
+        cout << endl;
+        return 1;
+    }
+
+    eAddressValidated[l++] = '.';
+
+    cout << " Validated e-mail: " << eAddressValidated << endl;
 }
 
 bool isLowercaseLetter(char letter) {
