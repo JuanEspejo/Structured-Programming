@@ -1,15 +1,13 @@
 #include<iostream>
 #include<cstring>
-#include<cstdio>
 
 using namespace std;
 
 int main(){
 	char palabra[50];
     cout << "ingrese una palabra: ";
-	fgets(palabra,50,stdin);   
-    int lon = strlen(palabra);
-	int iFinal = lon - 2; 
+	cin >> palabra;   
+    int iFinal = strlen(palabra) - 1; 
 	cout << "iFinal: " << iFinal << endl;
 
 	for (int j = 0; j <= iFinal/2; j++) {
