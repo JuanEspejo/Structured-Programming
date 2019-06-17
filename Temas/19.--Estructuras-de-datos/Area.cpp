@@ -13,8 +13,7 @@ typedef struct {
 
 int main(){
     Rectangulo rectangulo;
-    int delta1, delta2;
-    long area;
+    int delta1, delta2, area;
     /* Ingresando las coordenadas de esquina1 */
     printf("\n Ingrese la abcisa de esquina1: ");
     scanf("%d", &rectangulo.esquina1.x);
@@ -31,5 +30,5 @@ int main(){
     delta1 = abs(rectangulo.esquina1.x - rectangulo.esquina2.x);
     delta2 = abs(rectangulo.esquina1.y - rectangulo.esquina2.y);
     area = delta1*delta2;
-    printf("\nEl area es de %ld unidades.\n\n", area);
+    printf("\nEl area es de %d unidades.\n\n", area);
 }
