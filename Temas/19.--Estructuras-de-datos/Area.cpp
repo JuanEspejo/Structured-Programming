@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <cstdio>
+#include <cstdlib>
 
 int delta1, delta2;
 long area;
@@ -12,7 +13,7 @@ struct rectangulo{
     struct coordenada esquina2;
 } rectangulo1;
 
-void main( void ){
+int main(){
     /* Ingresando las coordenadas de esquina1 */
     printf("\n Ingrese la abcisa de esquina1: ");
     scanf("%d", &rectangulo1.esquina1.x);
