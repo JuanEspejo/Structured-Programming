@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 #include <cmath>
 #include <iomanip>
 
@@ -16,12 +17,10 @@ void leerIMC(double imc);
 
 main() {
     Persona persona;
-    cout << "ingrese nombre: ";
-    cin >> persona.nombre;
-    cout << persona.nombre << ", ingrese su masa (kg): ";
-    cin >> persona.masa;
-    cout << persona.nombre << ", ingrese su altura (m): ";
-    cin >> persona.altura;
+    persona.nombre[0] = 0;
+    strcat(persona.nombre,"Juan");
+    persona.masa = 80;
+    persona.altura = 1.71;
     persona.IMC = obtenerIMC(persona.masa, persona.altura);
     cout << persona.nombre << ", su IMC es ";
     cout << fixed << setprecision(2) << persona.IMC;
