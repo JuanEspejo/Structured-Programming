@@ -30,7 +30,7 @@ void ingreso(int n, Rollo *rol)
 }
 
 void venta(int n, Rollo *rol)
-{
+{ 
 	int i, m;
 	char ct[3];			// código de tela
 	printf("Codigo de tela: "); scanf("%s", ct);
