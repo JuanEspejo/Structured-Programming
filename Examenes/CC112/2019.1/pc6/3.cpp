@@ -1,6 +1,6 @@
 #include<cstdio>
 #include<cstring>
- 
+  
 typedef struct {
 	char codigo[3];
 	int nr;
