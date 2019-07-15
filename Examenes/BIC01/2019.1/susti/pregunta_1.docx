@@ -1,0 +1,22 @@
+Algoritmo pregunta_1
+	Escribir 'Este algoritmo ejecuta la serie'
+	Escribir 'S(n) = 1/0! + 1/1! + 1/2! + ... + 1/n!'
+	
+	Para n<-0 Hasta 10 Con Paso 2 Hacer
+		i <- 0
+		s_n <- 0
+		Mientras (i <= n) Hacer
+			fact <- 1
+			Si i > 0 Entonces
+				Para j<-1 Hasta i Hacer
+					fact <- fact*j
+				FinPara
+			Fin Si			
+			s_n <- s_n + 1/fact
+			i <- i + 1
+		FinMientras
+		Escribir 's_n es:',s_n
+	FinPara
+	
+FinAlgoritmo
+
