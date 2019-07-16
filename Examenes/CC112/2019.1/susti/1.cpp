@@ -20,6 +20,6 @@ int main(){
 		if(max<*p) max = *p;
 		cout << " " << i << " " << p << " " << *p++ << endl;
 	}
-    
+
 	cout << "\nEl maximo es: " << max << endl;
 }
