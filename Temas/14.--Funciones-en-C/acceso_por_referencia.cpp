@@ -2,8 +2,6 @@
 
 using namespace std;
 
-int cuadrado (int * ref);
-
 int main ()
 {
 	int nota = 20;
@@ -15,4 +13,6 @@ int main ()
 	// el operador indireccion va en sentido contrario al 
 	// operador direccion 
 	cout << "nota: " << *p << endl; 
+	// el operando del operador indireccion 
+	// tiene que ser un puntero (direccion de memoria) necesariamente
 }
