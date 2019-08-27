@@ -11,7 +11,7 @@ int main ()
 		if (es_primo(j)) cout << j << endl;
 }
 
-bool es_primo (int N)
+bool es_primo (int N) // N es una variable local de es_primo
 { 
 	for (int d = 2; d < N; d++)
 	{
