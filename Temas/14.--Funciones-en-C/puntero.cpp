@@ -5,14 +5,10 @@ using namespace std;
 int main ()
 {
 	int nota = 20;
-	int * puntero = &nota;
+	int * puntero = &nota; // & es el operador unario direccion
 
 	cout << "nota: " << nota << endl;
 	cout << "&nota: " << &nota << endl;
 	cout << "puntero: " << puntero << endl;
 }
-
-
-
-
 
