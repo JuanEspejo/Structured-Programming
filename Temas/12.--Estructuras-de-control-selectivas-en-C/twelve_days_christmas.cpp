@@ -2,7 +2,7 @@
 
 using namespace std;
 
-main ()
+int main ()
 {
 	while (int j = 1; j <= 4; j++)
 	{
