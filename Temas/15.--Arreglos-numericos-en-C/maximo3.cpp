@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+int maximo(int * p, int lon);
 
 int main(){
 	int notas[4] = {20, 18, 17, 16};
