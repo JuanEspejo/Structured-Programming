@@ -1,3 +1,4 @@
+ 
 #include<iostream>
 
 using namespace std;
@@ -7,8 +8,8 @@ int busqueda_binaria (int * p, int lon, int elemento);
 int main ()
 {
 	int nota[7] = {12,13,15,16,17,19,20};
-	int nab = 13;
-    int indice = busqueda_binaria(nota, 7, nab);
+	int nab = 18;
+	int indice = busqueda_binaria(nota, 7, nab);
     
     if (indice >= 0)
     {
@@ -24,9 +25,10 @@ int busqueda_binaria (int * p, int lon, int elemento)
     int L = 0;
     int R = lon - 1;
     int m;
-    while (L <= R)
+    while (R - L > 1 || p[L] >= elemento)
     {
         m = (L + R) / 2;
+			cout << "m: " << m << endl;
 	    if (p[m] < elemento) L = m;
 	    else if (elemento < p[m]) R = m;
 	    else return m;
