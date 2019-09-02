@@ -15,7 +15,7 @@ int main(){
 
 int maximo(int * p, int lon)
 {
-	max = p[0];
+	int max = p[0];
 	for(int j = 1; j < lon; j++) {
 		if(p[j] > max)	
 			max = p[j];
