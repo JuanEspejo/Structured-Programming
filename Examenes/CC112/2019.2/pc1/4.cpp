@@ -17,7 +17,7 @@ int main()
    	while (x != x0 || y != y0) 
    	{
       	recorrido += sqrt(pow(x - x0,2) + pow(y - y0,2));
-      	x0 = x; y0 = y; // actualizando la posición de la hormiga     
+      	x0 = x; y0 = y; // actualizando la posiciÃ³n de la hormiga     
       	cout << " Ingrese las coordenadas del siguiente punto: ";    
     	cin >> x >> y;
 	}
