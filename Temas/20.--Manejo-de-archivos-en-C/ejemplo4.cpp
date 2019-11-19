@@ -28,5 +28,5 @@ int main ()
         printf("%c", cc);
         cc = fgetc(pf);
     }
-    fclose(pf);\
+    fclose(pf);
 }
