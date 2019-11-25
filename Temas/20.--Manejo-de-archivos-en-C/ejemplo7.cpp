@@ -15,7 +15,8 @@ int main()
     cc = fgetc(pf);
     while(!feof(pf))
     {
-        fseek(pf, offset++, 0); // offset: 3
+        //fseek(pf, offset++, SEEK_SET); 
+        fseek(pf, offset++, 0);
         putchar(cc);
         cc = fgetc(pf);
     }
